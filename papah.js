@@ -3041,8 +3041,8 @@ encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: glo
 await fs.unlinkSync(encmedia)
 }
 break
-case 'mukelu': case 'lu': {
-var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/mukelu')
+case 'p': case 'y': {
+var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/animestick')
 var wifegerak = ano.split('\n')
 var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
 encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: global.packname, author: global.author, })
