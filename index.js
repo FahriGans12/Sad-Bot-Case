@@ -162,7 +162,7 @@ async function startpapah() {
                 let butleav = [{ buttonId: 'subsyt', buttonText: { displayText: 'Sayonara👋' }, type: 1 }]
                 let butselamat = [{ buttonId: '', buttonText: { displayText: 'SELAMAT' }, type: 1 }]
                 let butsebar = [{ buttonId: '', buttonText: { displayText: 'SABAR' }, type: 1 }]
-                let nyoutube = ('© papah\nYoutube/Sc :\nhttps://youtube.com/c/papahdev')
+                let nyoutube = ('RezBotzレゼ :\nhttps://youtube.com/FahrizalOfc')
                 let teks1 = `*Halo Kak @${num.split('@')[0]}*\n*Selamat Datang Di Grup*\n*${metadata.subject}*\n*Jangan Lupa Intro Yahh*\n_~Admin_`
                 let teks2 = `*Selamat Tinggal Kak @${num.split('@')[0]}*\n*Semoga Tenang Di Alam Sana*\n_~Admin_`
                 let teks3 = `*@${num.split('@')[0]} Promote From*\n*${metadata.subject}*\n*Selamat Anda Menjadi Admin*\n_~Jangan Semena Mena!_`
@@ -221,7 +221,7 @@ async function startpapah() {
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await papah.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await papah.getName(i + '@s.whatsapp.net')}\nFN:${await papah.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:papahdev@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/papah.dev\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await papah.getName(i + '@s.whatsapp.net')}\nFN:${await papah.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET: playgogle034@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/fdev90\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	papah.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
