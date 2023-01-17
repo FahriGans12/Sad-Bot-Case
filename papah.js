@@ -4081,23 +4081,6 @@ let alfamart = `628111500959@s.whatsapp.net`
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let jawab = `*${ucapanWaktu}*
-╭──❒「 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 」❒
-├ *Nama* : ${pushname}
-├ *Number* : @${me.split('@')[0]}
-├ *Premium* : ${isPremium ? '✅' : `❌`}
-├ *Limit* : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-╰──❒
-
-╭──❒「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」❒
-├ *Nama Bot* : ${botname}
-├ *Powered* :\n├ *@${ini_mark.split('@')[0]}*
-├ *Owner* : @${ownernya.split('@')[0]}
-├ *Mode* : ${papah.public ? 'Public' : `Self`}
-├ *Prefix* :「 MULTI-PREFIX 」
-├ *Total Hit* : ${jumlahcmd}
-├ *Total Hit Today* : ${jumlahharian}
-╰──❒
-
 ╭──❒「 𝙄𝙉𝘿𝙊𝙉𝙀𝙎𝙄𝘼 」❒
 ├ *Hari Ini* :\n├ *${hariini}*
 ├ *Wib* : ${barat} WIB
@@ -4105,7 +4088,7 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Wit* : ${timur} WIT
 ╰──❒`
             let ments = [ownernya, me, ini_mark]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🐋Donasi' }, type: 1 }]
 
   papah.sendButtonText(m.chat, buttons, jawab, nyoutube, fkontak, {mentions: ments})
   papah.sendMessage(m.chat, { audio: papah_dev, mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })    
@@ -4592,7 +4575,7 @@ _*🇯🇵 : このボットの機能のリスト*_.
 
 *[   INFORMATION   ]*
 _⫹⫺ Your Name : ${m.pushName}_
-_⫹⫺ Bot Name : Sad-Bot_
+_⫹⫺ Bot Name : RezBotz~Md_
 _⫹⫺ Library : Baileys-Md_
 _⫹⫺ Version : 4.4.0_
 _⫹⫺ Language : Javascript_
